@@ -204,6 +204,17 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
+			<dict>
+				<key>compatible</key>
+				<string>pci8086,a102</string>
+				<key>device-id</key>
+				<data>
+				MDJBMTAwMDA=
+				</data>
+				<key>model</key>
+				<string>Intel 100 Series AHCI Controller</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
@@ -405,7 +416,7 @@
 				<key>Comment</key>
 				<string>By RapidEFI</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/HoRNDIS</string>
 				<key>MaxKernel</key>
@@ -423,7 +434,7 @@
 				<key>Comment</key>
 				<string>By RapidEFI</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/NullEthernet</string>
 				<key>MaxKernel</key>
@@ -441,7 +452,7 @@
 				<key>Comment</key>
 				<string>By RapidEFI</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/RealtekRTL8100</string>
 				<key>MaxKernel</key>
@@ -477,7 +488,7 @@
 				<key>Comment</key>
 				<string>By RapidEFI</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelMausi</string>
 				<key>MaxKernel</key>
@@ -495,7 +506,7 @@
 				<key>Comment</key>
 				<string>By RapidEFI</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelMausiEthernet</string>
 				<key>MaxKernel</key>
@@ -513,7 +524,7 @@
 				<key>Comment</key>
 				<string>By RapidEFI</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/LucyRTL8125Ethernet</string>
 				<key>MaxKernel</key>
@@ -804,7 +815,7 @@
 			<key>ProvideCurrentCpuInfo</key>
 			<false/>
 			<key>SetApfsTrimTimeout</key>
-			<integer>-1</integer>
+			<integer>0</integer>
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
@@ -857,7 +868,7 @@
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>5</integer>
+			<integer>2</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -870,13 +881,13 @@
 			<key>DisplayDelay</key>
 			<integer>0</integer>
 			<key>DisplayLevel</key>
-			<integer>2147483650</integer>
+			<integer>0</integer>
 			<key>LogModules</key>
 			<string>*</string>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>3</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -1026,7 +1037,7 @@
 				AAAAAAAAAAAAAAAAAAA=
 				</data>
 				<key>boot-args</key>
-				<string>debug=0x100 -no_compat_check -wegnoegpu -igfxblr -igfxbls alcid=1 keepsyms=1 -itlwmdbg</string>
+				<string>-no_compat_check -wegnoegpu -igfxblr -igfxbls alcid=1</string>
 				<key>csr-active-config</key>
 				<data>
 				/w8AAA==
