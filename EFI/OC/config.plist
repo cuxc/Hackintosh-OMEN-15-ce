@@ -1144,7 +1144,7 @@
 				AAAAAAAAAAAAAAAAAAA=
 				</data>
 				<key>boot-args</key>
-				<string>-no_compat_check -wegnoegpu -igfxblr alcid=1 -ibtcompatbeta</string>
+				<string>-no_compat_check -wegnoegpu -igfxblr alcid=1</string>
 				<key>csr-active-config</key>
 				<data>
 				/w8AAA==
